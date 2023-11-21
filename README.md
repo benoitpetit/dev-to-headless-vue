@@ -2,6 +2,9 @@
 
 ![GitHub](./src/assets/logo.png)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/56dffbc1-c4dd-4d52-9aec-965e88fa521a/deploy-status)](https://app.netlify.com/sites/dev-to-headless-vue/deploys)
+
+
 This project is a headless blog application built with Vue.js and the Dev.to API.
 
 ## Prerequisites
