@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <header>
+      <nav class="logo">
+        <div>
+          <a href="http://dev.to/benoitpetit">
+            <img :src="devto" alt="Logo" />
+          </a>
+        </div>
+        <div>
+          <h1>dev.to headless vue</h1>
+        </div>
+      </nav>
+    </header>
+    <div id="app">
+      <div class="menu">
+        <router-link to="/">Accueil</router-link>
+        <router-link to="/blog">Blog</router-link>
+      </div>
+      <router-view></router-view>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <p>©2023 - dev.to headless vue ❤️</p>
+      <a href="https://benoitpetit.dev">https://benoitpetit.dev</a>
+    </div>
+  </footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { onBeforeMount } from "vue";
+import { useStore } from "vuex";
+import devto from "./assets/logo.png";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
+  setup() {
+    const store = useStore();
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    onBeforeMount(() => {
+      store.dispatch("getBlogContent");
+    });
+
+    return {
+      devto,
+    };
+  },
+};
+</script>

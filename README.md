@@ -1,24 +1,37 @@
-# dev-to-headless-blog
+# dev-to-headless-vue
 
-## Project setup
-```
-npm install
-```
+![GitHub](./src/assets/logo.png)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This project is a headless blog application built with Vue.js and the Dev.to API.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Prerequisites
 
-### Lints and fixes files
-```
-npm run lint
-```
+Before you begin, ensure that Node.js and npm are installed on your machine. If not, download and install them from [nodejs.org](https://nodejs.org).
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Installation
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install the dependencies with the command `npm install`.
+
+## Usage
+
+To run the application in development mode, use the command `npm run serve`.
+
+## Contribution
+
+Contributions are welcome. To contribute, please fork this repository, create a new branch, then submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. For more information, please see the LICENSE file.
+
+## Contact
+
+If you have any questions or comments, feel free to reach out.
+- [https://dev.to/benoitpetit](https://dev.to/benoitpetit)
+- [https://benoitpetit.dev](https://benoitpetit.dev)
+
+## Acknowledgements
+
+Thank you to everyone who has contributed to this project.
